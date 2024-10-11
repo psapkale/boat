@@ -1,0 +1,119 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+html,
+body {
+   height: 100%;
+   font-family: sans-serif;
+   box-sizing: border-box;
+}
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+.shop-now-link {
+   color: rgba(0, 0, 0, 0.8);
+   padding: 10px 0;
+   cursor: pointer;
+   font-size: 14px;
+   font-weight: 500;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   background: #eff4f7;
+}
+
+.nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+   padding: 20px 40px;
+}
+
+.logo > img {
+   width: 100px;
+   cursor: pointer;
+}
+
+.drops {
+   margin-left: 120px;
+   width: 60%;
+   display: flex;
+   align-items: start;
+   gap: 50px;
+   font-size: 17px;
+}
+
+.drops > div > svg {
+   margin-left: 4px;
+   transform: rotate(90deg);
+}
+
+.drops > * {
+   cursor: pointer;
+   position: relative;
+   padding-bottom: 4px;
+}
+
+.drops > *::after {
+   content: "";
+   position: absolute;
+   width: 35%;
+   height: 2px;
+   background-color: #ed1c24;
+   bottom: 0;
+   left: 30%;
+   transform: scale(0);
+   transition: 0.2s all ease-out;
+}
+
+.drops > *:hover {
+   font-weight: bold;
+}
+
+.drops > *:hover::after {
+   transform: scale(1);
+}
+
+.right {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+
+.search {
+   position: relative;
+}
+.search > svg {
+   position: absolute;
+   top: 20%;
+   left: 4%;
+}
+
+.search > input {
+   width: 300px;
+   padding: 16px 10px;
+   font-size: 16px;
+   padding-left: 42px;
+   border-radius: 30px;
+   border: none;
+   background: #f4f5f7;
+}
+
+.btns {
+   display: flex;
+   align-items: center;
+   gap: 14px;
+}
+.btns > img {
+   width: 26px;
+}
+.btns > * {
+   cursor: pointer;
+}
